@@ -1,0 +1,39 @@
+.card{
+    display: flex;
+}
+.card-section{
+    
+    padding: .4em;
+    display: flex;
+    justify-content: space-around;
+    display: flex;
+    gap:2em;
+}
+.card-container{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 5px;
+}
+.card-description{
+    text-align: left;
+    padding: .8em;
+
+}
+
+/* -------------- */
+/* Responsive styles */
+@media (max-width: 768px) {
+    .card-container {
+      flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+    }
+    
+    .card-item {
+      min-width: calc(50% - 1em); /* Set cards to occupy 50% of the container width minus the gap */
+      margin-bottom: 1em; /* Add some bottom margin for spacing */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card-item {
+      min-width: calc(100% - 1em); /* Set cards to occupy 100% of the container width minus the gap */
+    }
+  }

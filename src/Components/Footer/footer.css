@@ -1,0 +1,10 @@
+.footer-header{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #2d2f31;
+    color: aliceblue;
+}
+.footer-header p{
+    flex-shrink:1;
+    font-weight: bold;
+}

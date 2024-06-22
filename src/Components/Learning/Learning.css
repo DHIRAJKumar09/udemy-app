@@ -1,0 +1,124 @@
+.learning {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .learning-container {
+    width: 100%;
+  }
+  
+  .learning-section {
+    margin-bottom: 20px;
+    text-align: left;
+    
+  }
+  .learning-section h3{
+    font-family: var(--font-stack-heading-serif);
+        font-weight: 700;
+        font-size: 2.4rem;
+        line-height: 1.35;
+        letter-spacing: -.012rem;
+        max-width: 36em;
+
+  }
+  
+  .learning-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .learning-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .card-info {
+    
+    width: 400px;
+    margin: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    text-align: center;
+    cursor: pointer;
+    border-left: 5px solid #a435f0;
+    border-radius: 5px;
+    /* border: 1px solid purple; */
+  }
+  .card-img img {
+    aspect-ratio: auto 64 / 64;
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-description {
+    margin-top: 10px;
+  }
+  
+  .hovered-image {
+    position: absolute;
+    top: 6em;
+    right: 4em;
+    width: 45%;
+    border: 1px solid #ccc;
+    
+   
+  }
+  
+  .hovered-image img {
+    width: 100%;
+    height: auto;
+  }
+  @media (max-width: 800px){
+    .learning-cards-container{
+        display: block;
+    }
+    /* .hovered-image{
+        display: none;
+    } */
+    .hovered-image {
+      position: absolute;
+      top: 6em;
+      right: 4em;
+      width: 45%;
+      border: 1px solid #ccc;
+      
+     
+    }
+    
+    .card-info{
+        width: 200px;
+        font-size: .4em;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+  }
+  @media (max-width:600px) {
+    .hovered-image {
+      position: absolute;
+      top: 10em;
+      right:2em;
+      width: 45%;
+      border: 1px solid #ccc;
+      
+     
+    }
+    .learning-cards-container{
+      display: none;
+    }
+    
+    
+  }
+  @media (max-width:480px){
+    .learning-cards-container{
+      display: none;
+    }
+  }
+  

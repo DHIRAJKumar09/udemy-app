@@ -1,0 +1,367 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+.nav-ul{
+    color: black;
+    font-family: "Udemy Sans","SF Pro Text",-apple-system,BlinkMacSystemFont,Roboto,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";;
+    display: flex;
+    font-size: .8em;
+    justify-content: space-around;
+    align-items: center;
+    padding: .8em;
+    
+}
+
+.nav-search{
+    border: 1px solid black;
+    padding: .7em;
+    gap: .4em;
+    border-radius: 25px;
+    flex: 0 1 300px;
+    display: flex;
+    max-width: 300px;
+    min-width: 0;
+    margin-left: .4em;
+    justify-content: space-between;
+    background-color: #f9f4f4;
+    color:gray;
+
+}
+.search-btn{
+    border: none;
+    outline: none;
+    min-width: 0;
+    background-color: #f9f4f4;
+}
+.search-btn:focus{
+    
+}
+.nav-ul>li{
+    list-style: none;
+}
+.nav-login-contianer{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+.btn{
+    padding: .4em .8em;
+}
+.login{
+    border: 1px solid black;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+}
+.signup{
+    color: white;
+    font-weight: bold;
+    background-color: black;
+    border:2px solid black
+}
+.language{
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  border: 1px solid black;
+
+}
+.main{
+    position: relative;
+}
+.text-description{
+    font-family: SuisseWorks, Georgia, Times, "Times New Roman", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background: white;
+    text-align: left;
+    padding: 2em 1em;
+    width: 35vw;
+    position: absolute;
+    line-height: 1.4;
+    top: 20%;
+    left: 5%;
+}
+.cards-container{
+    display: flex;
+    overflow-x: auto;
+}
+.cards-container::-webkit-scrollbar{
+    width: 0;
+}
+
+
+  .menu-icon {
+   display: none;
+   padding: 1em;
+  }
+  
+  /* Styles for start icons */
+  .start-icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .start-icons img {
+    width: 4em;
+    margin-right: 1em; /* Add some margin between the logo and the menu icon */
+  }
+  
+  /* Styles for end icons */
+  .end-icon {
+    display: none; /* Initially hide end icons */
+  }
+  .sidebar-container{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: white;
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    padding: 1em;
+    z-index: 1000;
+    display: none;
+
+  }
+  .sidebar-ul{
+    list-style: none;
+    text-align: left;
+    max-width: 150px;
+    max-height: 400px;
+    line-height: 2;
+    font-size: .8em;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: .8em;
+  }
+  .nav-category{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    font-size: .8em;
+    /* background-color: #f9f4f4; */
+   
+   
+  }
+  .category-items{
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+   
+    
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    gap: .8em;
+    z-index: 30;
+   
+    
+  
+  }
+  .cate-item{
+    display: none;
+    letter-spacing: 1.2;
+    min-width: 200px;
+    cursor: pointer;
+    
+  }
+  .nav-category:hover .cate-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .8em;
+   
+ 
+    
+  }
+  .udemybusiness{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+
+  }
+ 
+  .business-block{
+
+    min-width: 200px ;
+    position: absolute;
+   
+  }
+  .business-text{
+    display: none;
+    margin-top: 2em;
+    padding:.5em;
+    background: white;
+    box-shadow: rgba(60l, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    color: black;
+    
+  }
+  .business-text p{
+    font-weight:bold ;
+    font-size: 1.2em;
+  }
+  .business-btn{
+    padding: .5em .8em;
+    font-weight: bold;
+    border: none;
+    background-color: black;
+    outline: none;
+    color: white;
+  }
+  .udemybusiness:hover,.business-text{
+    display: flex;
+    flex-direction: column;
+    gap: .4em;
+    z-index: 3000;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    
+  }
+  .show-courses{
+    min-width: 400px;
+    left: 30px;
+    padding: .8em;
+    border: 1px solid black;
+  }
+  .company-container{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1.2em;
+  }
+  .company-name{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  padding: 2em;
+  }
+  .company-text h4{
+    color: grey;
+  }
+@media (max-width: 928px){
+  .udemybusiness{
+    display: none;
+  }
+
+}
+@media (max-width: 800px) {
+    .text-description{
+        position: relative;
+        /* width: 100%; */
+    }
+    .main{
+        display: block;
+    }
+    .nav-ul {
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+      }
+    
+      .nav-ul.open {
+        transform: translateX(0);
+      }
+    
+      .nav-ul li {
+        margin: 1em 0;
+      }
+    
+      .nav-search {
+        width: 100%;
+        margin-top: 1em;
+      }
+    
+      .search-btn {
+        width: 100%;
+      }
+    
+      .nav-login-container {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 1em;
+      }
+    
+      .main-container img {
+        width: 100%;
+        height: auto;
+      }
+      .text-container{
+        width: 100%;
+        padding: none;
+        
+      }
+      .text-description{
+      
+        width: 90vw;
+      }
+      .text-description h2 {
+        
+        font-size: 1.2em;
+
+      }
+      .cards-container{
+        font-size: .6em;
+      }
+    
+      .cards-section .headers h1 {
+        font-size: 1.5em;
+      }
+    
+      .menu-icon {
+        display: flex;
+        justify-content: space-between;
+        padding-left: .4em;
+        align-items: center;
+      }
+      .end-icon {
+        display: flex;
+        align-items: center;
+        gap: .8em;
+        padding-right: .4em;
+      }
+      .sidebar-container{
+        display: block;
+      }
+    
+    
+  }
+  @media (max-width: 480px) {
+    .nav-ul {
+      display: block;
+    }
+  
+    .nav-ul li {
+      margin: 0.5em 0;
+    }
+  
+    .nav-search {
+      margin: 1em 0;
+    }
+  
+    .nav-login-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-login-container .btn {
+      width: 100%;
+      margin: 0.5em 0;
+    }
+  
+    .text-description h2 {
+      font-size: 1em;
+    }
+  
+    .cards-section .headers h1 {
+      font-size: 1.2em;
+    }
+  }
